@@ -10,6 +10,8 @@ app.get('/' , (req , res ) =>{
 });
 
 app.post('/uploads' ,upload.single('avatar'), (req , res)=>{
+    const file = req.file
+    console.log(file)
 
 })
 
