@@ -1,14 +1,14 @@
-const express = require('express')
+const express = require('express');
 const app = express();
-require = ('dotenv').config
+const multer = require('multer');
+require('dotenv').config()
 const PORT = process.env.PORT
-const multer  = require('multer')
 const upload = multer({dest: "/uploads"})
 
 app.get('/' , (req , res ) =>{
     res.send("Aws-s3 file upload")
 });
-app.post('/' , aws)
+
 
 app.post('/uploads' ,upload.single('avatar'), (req , res)=>{
     const file = req.file
@@ -17,5 +17,5 @@ app.post('/uploads' ,upload.single('avatar'), (req , res)=>{
 })
 
 app.listen(PORT , () =>{
-    console.log('Server Connected')
+    console.log(`Server Started at ${PORT}`)
 })
