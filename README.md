@@ -89,10 +89,10 @@ const getStreamFile = (filekey) =>{
 # Create your Amazon S3
 For all of this to work you need to create an aws account.
 
-$ Create an S3 bucket in your preferred region.
-$ Access Key Id and Secret Key
-$ Navigate to your bucket
-$ On the top right side you'll see your account name. Click it and go to Security Credentials.
+1. Create an S3 bucket in your preferred region.
+2. Access Key Id and Secret Key
+3. Navigate to your bucket
+4. On the top right side you'll see your account name. Click it and go to Security Credentials.
 $ Create a new access key under the Access Keys (Access Key ID and Secret Access Key) tab.
 $ Enter this information into your app as defined in "How to Use" "Step 1".
 $ Your region can be found under "Properties" button and "Static Website Hosting" tab.
