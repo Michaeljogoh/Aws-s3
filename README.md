@@ -4,11 +4,6 @@ S3 provides a simple way for uploading files to the Amazon S3 service with a pro
 
 
 
-$ Get Credentials
-$ Upload to Bucket
-$ Download from Bucket
-$ List Bucket Files
-
 
 # Upload Data o Bucket Endpoints
 localhost:4000/
